@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="magic-header">
-      <div className="glow-title">🚀 &lt; Siddharth /&gt;</div>
+      <div className="glow-title">&lt; Siddharth /&gt;</div>
       <nav className="nav-items">
         <a href="#projects">💼 Projects</a>
         <a href="#contact">📬 Contact</a>
