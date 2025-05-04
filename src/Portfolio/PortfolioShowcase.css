@@ -7,30 +7,6 @@
   z-index: 2;
 }
 
-.portfolio-container::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 200%;
-  width: 200%;
-  background: radial-gradient(white 1px, transparent 1px);
-  background-size: 3px 3px;
-  animation: starsMove 100s linear infinite;
-  z-index: 0;
-  opacity: 0.1;
-  pointer-events: none;
-}
-
-@keyframes starsMove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-500px, -1000px);
-  }
-}
-
 .portfolio-title {
   text-align: center;
   margin-top: 0px;
@@ -129,8 +105,6 @@ pre {
   z-index: 1;
 }
 
-
-
 .keyword {
   color: red;
   font-weight: bold;
@@ -138,7 +112,7 @@ pre {
 .key {
   color: red;
 }
-.key2{
+.key2 {
   color: gold;
 }
 .value {
@@ -158,7 +132,7 @@ a.value:hover {
 }
 
 .fn {
-  color:lawngreen;
+  color: lawngreen;
   font-weight: 600;
   font-style: italic;
 }
@@ -168,15 +142,15 @@ a.value:hover {
 }
 
 .key {
-  color: #2ecc71; 
+  color: #2ecc71;
   font-weight: bold;
 }
 .key1 {
-  color: mediumorchid; 
+  color: mediumorchid;
   font-weight: bold;
 }
 
-.del{
+.del {
   color: orchid;
 }
 
@@ -224,4 +198,20 @@ a.value:hover {
   }
 }
 
+.portfolio-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: stars 60s linear infinite;
+  opacity: 0.2;
+  z-index: 0;
+}
 
+@keyframes stars {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}

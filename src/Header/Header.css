@@ -18,27 +18,9 @@ body {
 
 .glow-title {
   color: darkgoldenrod;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-size: 30px;
   font-weight: 900;
-}
-
-@keyframes pulseShadow {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3), 0 0 20px rgba(0, 255, 255, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.3);
-  }
-}
-
-@keyframes textGlow {
-  from {
-    text-shadow: 0 0 5px #00ffe7;
-  }
-  to {
-    text-shadow: 0 0 25px #00ffe7;
-  }
 }
 
 .nav-items {

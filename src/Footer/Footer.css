@@ -10,6 +10,8 @@
   overflow: hidden;
   min-height: 200px;
   z-index: 10;
+  font-family: 'Permanent Marker', cursive;
+  color: aqua;
 }
 
 .footer-content {
@@ -19,9 +21,10 @@
 
 .footer-text {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #ffffff;
   margin-bottom: 1rem;
+  margin-top: 20px;
   display: inline-block;
   min-height: 2.4rem;
 }
@@ -34,44 +37,38 @@
 
 .footer-funny span {
   display: block;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .debugged {
-  color: #66ccff;
-  font-weight: bold;
+  color: #6e99c5;
   font-size: 1.4rem;
 }
 
-.social-icon {
-  color: #ffcc00;
-  text-decoration: none;
-  font-size: 1.5rem;
+.footer-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #00ffe7, #007cf0);
+  color: black;
   font-weight: 600;
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
 }
 
-.social-icon:hover {
-  color: #ff6666;
-  transform: scale(1.2);
-}
-
-.footer-glow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 200%;
-  height: 2px;
-  background: linear-gradient(to right, #ffcc00, #66ccff, #ff6666);
-  opacity: 0.6;
-  animation: glowing 1.5s ease-in-out infinite alternate;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-@keyframes glowing {
-  0% { box-shadow: 0 0 10px #ffcc00; }
-  100% { box-shadow: 0 0 25px #66ccff; }
+.footer-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.5);
 }
 
 .footer-container::after {
@@ -95,6 +92,8 @@
 @media (max-width: 768px) {
   .footer-text { font-size: 1.6rem; }
   .footer-funny { font-size: 1rem; }
-  .social-links { flex-direction: column; }
-  .social-icon { font-size: 1.2rem; }
+  .footer-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }

@@ -6,7 +6,7 @@ const SlidingPhoto = () => {
   const [displayedText, setDisplayedText] = useState("");
   const textRef = useRef(null);
 
-  const fullText = "a passionate Web Developer with experience in building modern, responsive, and user-friendly websites and applications. I specialize in React, JavaScript, CSS, and enjoy crafting clean, maintainable code that brings ideas to life on the web.";
+  const fullText = " A passionate Web Developer with experience in building modern, responsive, and user-friendly websites and applications. I specialize in React, JavaScript, CSS, and enjoy crafting clean, maintainable code that brings ideas to life on the web.";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
