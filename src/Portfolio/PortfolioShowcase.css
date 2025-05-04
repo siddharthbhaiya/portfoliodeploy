@@ -180,3 +180,48 @@ a.value:hover {
   color: orchid;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-container {
+    width: 100%;
+  }
+
+  .timeline-item {
+    margin-bottom: 3rem;
+  }
+
+  .code-card {
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .code-card.left,
+  .code-card.right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  pre {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .curve-line {
+    height: 60px;
+  }
+}
+
+

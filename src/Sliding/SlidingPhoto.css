@@ -123,4 +123,41 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .sliding-photo-container {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .slide-video {
+    width: 90%;
+    height: auto;
+    max-width: 320px;
+  }
+
+  .intro-card {
+    width: 100%;
+    padding: 1.5rem;
+    border-left: 6px solid red;
+  }
+
+  .intro-card h2 {
+    font-size: 2rem;
+  }
+
+  .intro-card p {
+    font-size: 1.2rem;
+  }
+
+  .aboutme {
+    font-size: 1.2rem;
+  }
+}
 
