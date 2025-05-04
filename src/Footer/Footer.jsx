@@ -6,7 +6,7 @@ const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [displayedText, setDisplayedText] = useState('');
 
-  const fullText = "lCompiled with ❤️ by Siddharth";
+  const fullText = ">Compiled with ❤️ by Siddharth";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
