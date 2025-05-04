@@ -3,10 +3,8 @@ body {
 }
 
 .magic-header {
-  /* background: black; */
   padding: 18px 50px;
   margin: 0 auto;
-  /* max-width: 90%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +12,6 @@ body {
   top: 1px;
   z-index: 1000;
   box-shadow: 0 0 20px white;
-  /* border-radius: 50px; */
   animation: pulseShadow 2s infinite ease-in-out;
   backdrop-filter: blur(8px);
 }
@@ -79,28 +76,31 @@ body {
   width: 100%;
 }
 
+/* ✅ Responsive Styles for Mobile Devices */
 @media screen and (max-width: 768px) {
   .magic-header {
     flex-direction: column;
-    padding: 15px;
+    align-items: center;
+    padding: 12px 20px;
     text-align: center;
-    border-radius: 30px;
-    max-width: 100%;
+    border-radius: 20px;
     width: 100%;
+    box-sizing: border-box;
   }
-  
+
   .glow-title {
     font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .nav-items {
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 12px;
     justify-content: center;
   }
-  
+
   .nav-items a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
