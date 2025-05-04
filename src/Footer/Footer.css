@@ -43,13 +43,6 @@
   font-size: 1.4rem;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 35px;
-}
-
 .social-icon {
   color: #ffcc00;
   text-decoration: none;

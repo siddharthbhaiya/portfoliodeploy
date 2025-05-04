@@ -51,11 +51,6 @@ const Footer = () => {
           <span className="debugged">.then(() =&gt; "100% Debugged")</span>
         </span>
 
-        <div className="social-links">
-          <a href="https://github.com/siddharth" target="_blank" rel="noopener noreferrer" className="social-icon">GitHub</a>
-          <a href="www.linkedin.com/in/siddharth-sekhar-singh-7626041a7" target="_blank" rel="noopener noreferrer" className="social-icon">LinkedIn</a>
-          <a href="mailto:siddharthsekhar2010@email.com" className="social-icon">Email</a>
-        </div>
       </div>
       <div className="footer-glow"></div>
     </footer>
