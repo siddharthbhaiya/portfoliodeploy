@@ -71,10 +71,10 @@ const PortfolioShowcase = () => {
     },
     {
       title: "📬 Connect with Me",
-      code: `<span class='key1'>📧 Email:</span> <a href="mailto:siddharthsekhar2010@gmail.com" class='value'>siddharthsekhar2010@gmail.com</a>
-<span class='key1'>🔗 LinkedIn:</span> <a href="https://www.linkedin.com/in/siddharth-sekhar-singh-7626041a7" target="_blank" rel="noopener noreferrer" class='value'>Visit Profile↗</a>
-<span class='key1'>📄 Contact:</span> <span class='value'>+91 8144118241</span>`
-},
+      code:`<span class='key1'>  📧 Email:</span> <a href="mailto:siddharthsekhar2010@gmail.com" class='value'>siddharthsekhar2010@gmail.com</a>
+  <span class='key1'>🔗 LinkedIn:</span> <a href="https://www.linkedin.com/in/siddharth-sekhar-singh-7626041a7" target="_blank" rel="noopener noreferrer" class='value'>Visit Profile↗</a>
+  <span class='key1'>📄 Contact:</span> <span class='value'>+91 8144118241</span>`
+    },
   ];
 
   return (
@@ -88,12 +88,11 @@ const PortfolioShowcase = () => {
               code={section.code}
               align={index % 2 === 0 ? "left" : "right"}
             />
-            {index !== sections.length - 1 && (
-              <div className="curve-line" />
-            )}
+            {index !== sections.length - 1 && <div className="curve-line" />}
           </div>
         ))}
       </div>
+      <div id="connect-with-me" />
     </div>
   );
 };

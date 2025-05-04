@@ -17,12 +17,20 @@ const Header = () => {
     document.body.removeChild(link);
   };
 
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById("connect-with-me");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="magic-header">
       <div className="glow-title">&lt; Siddharth /&gt;</div>
       <nav className="nav-items">
         <a href="#projects">💼 Projects</a>
-        <a href="#contact">📬 Contact</a>
+        <a href="#contact" onClick={handleContactClick}>📬 Contact</a>
         <a href="/Siddharth_front_end_developer.pdf" onClick={handleResumeClick}>
           📄 Download Resume
         </a>
